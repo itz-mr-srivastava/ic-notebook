@@ -47,4 +47,9 @@ npm install
 # Create a `.env` file with:
 # MONGO_URI=<your-mongodb-uri>
 # JWT_SECRET=<your-secret>
+
+🌐 Frontend Setup
+cd Frontend/vite-project
+npm install
+npm run dev
 node server.js
