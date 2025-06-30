@@ -1,0 +1,245 @@
+body.dark-mode {
+  background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode .note-form,
+body.dark-mode .note {
+  background: #333;
+  color: #f1f1f1;
+}
+
+body {
+  background: #f7f7f7;
+  transition: background 0.5s ease, color 0.5s ease;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.note {
+  border: 1px solid #ddd;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+button.btn {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+}
+
+button.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5f0fce 0%, #2064e0 100%);
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.pagination-controls button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.pagination-controls button:hover {
+  transform: scale(1.05);
+}
+
+body:not(.dark-mode) .navbar {
+  background: #f1f1f1;
+  color: black;
+}
+
+body:not(.dark-mode) .navbar h2 {
+  color: black;
+}
+
+body:not(.dark-mode) .navbar-actions .btn {
+  color: black;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 2px rgba(98, 0, 234, 0.2);
+}
+
+.search-bar {
+  margin: 1.5rem auto;
+  display: block;
+  max-width: 500px;
+  padding: 0.8rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 0 2px rgba(38, 132, 255, 0.3);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  animation: slideDown 0.5s ease forwards;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  animation: fadeIn 0.6s ease-in;
+}
+
+.auth-container input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.auth-container button {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-container button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5f0fce 0%, #2064e0 100%);
+}
+
+.note-form {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.note-form-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pin-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
+}
+
+/* Action Buttons in Note */
+.note .action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.note .action-buttons button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.note .action-buttons .edit-btn {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #000;
+}
+
+.note .action-buttons .edit-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #3ed17e 0%, #2eeec9 100%);
+}
+
+.note .action-buttons .delete-btn {
+  background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+  color: #000;
+}
+
+.note .action-buttons .delete-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #e2003a 0%, #ffa58c 100%);
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

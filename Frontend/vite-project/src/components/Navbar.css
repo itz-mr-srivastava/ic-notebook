@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  animation: slideDown 0.5s ease forwards;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #ffffff33;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background: #ffffff55;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
